@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html title="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Barra Malvinas App</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/-Login-form-Page-BS4--Login-form-Page-BS4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Lista-Productos-Canito.css">
+    <link rel="stylesheet" href="assets/css/login-form---Ambrodu-login.css">
+    <link rel="stylesheet" href="assets/css/login-form---Ambrodu.css">
+    <link rel="stylesheet" href="assets/css/Projects-Grid-images.css">
+    <link rel="stylesheet" href="assets/css/tarjetaModal.css">
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
+    integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    ></script>
+
+</head>
+
+<body>
+    <!-- Start: ♣ Login form Page BS4 ♣ -->
+    <div class="container-fluid">
+        <div class="row mh-100vh">
+            <!-- Start: Login block -->
+            <div class="col-10 col-sm-8 col-md-6 col-lg-6 offset-1 offset-sm-2 offset-md-3 offset-lg-0 align-self-center d-lg-flex align-items-lg-center align-self-lg-stretch bg-white p-5 rounded rounded-lg-0 my-5 my-lg-0" id="login-block">
+                <!-- Start: Login container -->
+                <div class="m-auto w-lg-75 w-xl-50">
+                    <!-- Start: Your company -->
+                    <h2 class="text-info fw-light mb-5">Malvinas Argentinas</h2><!-- End: Your company -->
+                    <!-- Start: Login form -->
+                    <form>
+                        <!-- Start: Email -->
+                        <div class="form-group mb-3"><label  class="form-label text-dark text-secondary">Username</label><input id="username" class="form-control" type="text" required=""  ></div><!-- End: Email -->
+                        <!-- Start: Password -->
+                        <div class="form-group mb-3"><label  class="form-label text-dark text-secondary">Password</label><input id="password" class="form-control" type="password" required=""></div><!-- End: Password -->
+                        <!-- Start: Submit --><button onclick="submitForm();" class="btn btn-dark mt-2" type="button">Iniciar Sesion</button><!-- End: Submit -->
+                    </form><!-- End: Login form -->
+                    <h4 id="error" style="display: none; color:red;">Contraseña o Usuario incorrecto</h4>
+                    <!-- Start: Forgot password -->
+                    <p class="mt-3 mb-0"></p><!-- End: Forgot password -->
+                </div><!-- End: Login container -->
+            </div><!-- End: Login block -->
+            <!-- Start: Background image -->
+            <div class="col-lg-6 d-flex align-items-end" id="bg-block" style="background: repeating-linear-gradient(-104deg, var(--bs-blue) -1%, var(--bs-primary) 95%), var(--bs-blue);">
+                <p></p>
+            </div><!-- End: Background image -->
+        </div>
+    </div><!-- End: ♣ Login form Page BS4 ♣ -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p class="text-muted mb-0 small">Desarrollado por:&nbsp; <a href="https://antuponturo.me/" target="_blank">antuponturo.me</a></p>
+        </div>
+        <div class="container">
+            <p class="text-muted mb-0 small">Copyright &nbsp;© Antu Ponturo</p>
+        </div><a class="js-scroll-trigger scroll-to-top rounded" href="#page-top"><i class="fa fa-angle-up"></i></a>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/bs-init.js"></script>
+    <script src="/js/login.js"></script>
+</body>
+
+</html>

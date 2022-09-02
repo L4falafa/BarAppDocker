@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Barra Malvinas App</title>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body><a class="menu-toggle rounded" href="#"><i class="fa fa-bars"></i></a>
+    <nav class="navbar navbar-light navbar-expand" id="sidebar-wrapper">
+        <div class="container"><button data-bs-toggle="collapse" class="navbar-toggler d-none" data-bs-target="#"></button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav sidebar-nav" id="sidebar-nav">
+                    <li class="nav-item sidebar-brand"><a class="nav-link active js-scroll-trigger" href="/auth/logout">Log Out</a></li>
+                    <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="/sesiones">Sesiones</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="container">
+            <div class="row row-cols-4">
+                <div class="col-1 col-xl-1 col-xxl-1" style="border-style: solid;">
+                    <h1 class="d-lg-flex justify-content-lg-center align-items-lg-end">Id</h1>
+                </div>
+                <div class="col" style="border-style: solid;">
+                    <h1 class="d-lg-flex justify-content-lg-center align-items-lg-end">Hora</h1>
+                </div>
+                <div class="col-1 col-xl-1 col-xxl-1" style="border-style: solid;">
+                    <h1 class="d-lg-flex justify-content-lg-center align-items-lg-end">MP</h1>
+                </div>
+                <div class="col-xxl-5 flex-fill" style="border-style: solid;">
+                    <h1 class="d-lg-flex justify-content-lg-center align-items-lg-end">Producto</h1>
+                </div>
+            </div>
+            <section>
+                {{#each compras}}
+                <div class="row row-cols-4" style="border-color: var(--bs-indigo);">
+                    <div class="col-1 col-xl-1 col-xxl-1 d-xl-flex justify-content-xl-center align-items-xl-center" style="border-style: solid;border-color: var(--bs-gray-700);">
+                        <h1 class="text-black-50">{{this.id}}</h1>
+                    </div>
+                    <div class="col-3 col-xxl-3 text-black-50" style="border-style: solid;border-color: var(--bs-gray-700);">
+                        <h1 class="text-break text-black-50">{{this.fecha}}</h1>
+                    </div>
+                    <div class="col-1 col-xl-1 col-xxl-1 text-center d-xl-flex justify-content-xl-center align-items-xl-center" style="border-style: solid;border-color: var(--bs-gray-700);"><img class="img-fluid" {{#if mp}}src="https://cdn.discordapp.com/attachments/507708012820168725/1013557788267524166/unknown.png"{{/if}} width="71" height="71"></div>
+                    <div class="col-xxl-6 text-black-50 flex-fill" style="border-style: solid;border-color: var(--bs-gray-700);">
+                        <div class="row row-cols-3">
+                            <div class="col flex-fill">
+                                <h1 style="overflow: clip;">{{this.nombre}}</h1>
+                            </div>
+                            <div class="col-3 col-xl-3 col-xxl-3">
+                                <h1 style="overflow: clip;">$ {{this.precio}}</h1>
+                            </div>
+                            <div class="col-1 col-xl-1 col-xxl-1 text-center d-xl-flex justify-content-xl-center align-items-xl-center" style="padding: 1px;"><img class="img-fluid flex-grow-1 flex-fill" src="{{this.linkImg}}" width="31" height="31"></div>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}            
+            </section>
+        </div>
+    </section>
+    <h4 class="d-block" style="position: static;transform-origin: left;margin-left: 23px;padding-bottom: 0px;margin-top: 228px;">$ 23650<br><br></h4>
+    <footer class="footer text-center">
+        <div class="container">
+            <p class="text-muted mb-0 small">Desarrollado por:&nbsp; <a href="https://antuponturo.me/" target="_blank">antuponturo.me</a></p>
+        </div>
+        <div class="container">
+            <p class="text-muted mb-0 small">Copyright &nbsp;© Antu Ponturo</p>
+        </div><a class="js-scroll-trigger scroll-to-top rounded" href="#page-top"><i class="fa fa-angle-up"></i></a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/script.min.js"></script>
+</body>
+
+</html>
